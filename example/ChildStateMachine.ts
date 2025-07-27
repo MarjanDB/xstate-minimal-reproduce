@@ -33,6 +33,11 @@ export function createChildStateMachine() {
                 someValue: Math.random(),
               });
             }),
+
+            // replacing the above with the following, will not throw a warning
+            // actions: assign({
+            //   someValue: Math.random(),
+            // }),
           },
         },
       },
